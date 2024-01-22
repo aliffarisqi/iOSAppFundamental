@@ -9,7 +9,7 @@ let workItem = DispatchWorkItem{
 workItem.perform()
 
 let queue = DispatchQueue(label: "me.aliffarisqi.dispatchworkitem", qos: .utility)
-queue.async(execute: workItem)
+//queue.async(execute: workItem)
 
 workItem.notify(queue: DispatchQueue.main){
     print("Inal value \(value)")
